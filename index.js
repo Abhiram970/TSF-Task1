@@ -1,15 +1,7 @@
-var mysql = require('mysql');
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database : "pay",
-  password: "Abhiram707",
-  port : 3307
-});
 
-con.connect(function(err) {
-  con.query("SELECT * from payments", function (err, result, fields) {
-    console.log(result);
-  });
-});
+(function(){
+  var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+  if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+  s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+  rzp && rzp.init && rzp.init()}})();
