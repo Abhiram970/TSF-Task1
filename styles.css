@@ -76,8 +76,8 @@ a.h12 {
 .header-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 600px 1fr;
-      grid-template-columns: 600px 1fr;
+  -ms-grid-columns: 600px 1000px;
+      grid-template-columns: 600px 1000px;
   position: relative;
   bottom: 30px;
 }
